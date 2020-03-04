@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MinnesotaNAEP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #001871">
+        <a class="navbar-brand" href="index.html">NAEP in Minnesota</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav navbar-right ml-auto mt-2 mt-lg-1">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="g4m.html">Grade 4 Mathematics</a>
+                  <a class="dropdown-item" href="g8m.html">Grade 8 Mathematics</a>
+                  <a class="dropdown-item" href="g4r.html">Grade 4 Reading</a>
+                  <a class="dropdown-item" href="g8r.html">Grade 8 Reading</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comp.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html" >Data</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col-md-8 mt-4 mb-5">
+            <div class="card" style="border-color: #001871">
+                <div class="card-body">
+                    <h2 class="card-text">Grade 8 Reading</h2>
+                    <a target="_blank" href="assets\Grade8Read.png"><img src="assets\Grade8Read.png" class="card-img-top" alt="NAEP Grade 8 Reading" style="width:100%"></a>
+                    <p class="card-text">The graph displays the percent of 8th grade students in Minnesota and the Nation (National public) performing at or above NAEP Proficient for reading from 2003 to 2019.</p>   
+                    <p class="card-text">For 8th grade reading, performing at the NAEP Proficient level consists of the ability to provide relevant information; summarize main ideas and themes; make and support inferences about a text; connect parts of a text; and analyze text features. In addition, performing at this level includes the ability to fully substantiate judgements about content and presentation of content.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-4 mb-5">
+            <div class="card" style="border-color: #001871">
+                <div class="card-body">
+                    <h2 class="card-text">Plots</h2>
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="col mb-3">
+                            <div class="card">
+                                <a href="g4m.html"><img src="assets\Grade4Math.png" class="img-fluid" alt="Grade 4 Mathematics" style="width:100%"></a>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card">
+                                <a href="g8m.html"><img src="assets\Grade8Math.png" class="img-fluid" alt="Grade 8 Mathematics" style="width:100%"></a>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card">
+                                <a href="g4r.html"><img src="assets\Grade4Read.png" class="img-fluid" alt="Grade 4 Reading" style="width:100%"></a>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card">
+                                <a href="g8r.html"><img src="assets\Grade8Read.png" class="img-fluid" alt="Grade 8 Reading" style="width:100%"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="comp.html" class="btn text-white" style="background-color: #001871;">Compare</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="page-footer pt-2" style="background-color: #001871">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-white">Note: Some apparent differences between results may or may not be statistically significant.<br>Source: U.S. Department of Education, Institute of Education Sciences, National Center for Education Statistics, National Assessment of Educational Progress (NAEP).</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-white">Created by Jennifer Cain</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
